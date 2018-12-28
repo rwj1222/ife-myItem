@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>I love my home</title>
+        <style>
+
+            table
+            {
+                border-collapse:collapse;
+                width:90%;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+            tr:first-of-type{
+                background-color: lightslategrey;
+            }
+
+            table,th,td{
+                border:1px solid black;
+
+            }
+            #product-radio-wrapper,#region-radio-wrapper{
+                width:50%;
+                margin-top:10px;
+                height: 40px;
+
+            }
+            #svg1,#canvas{
+                display: inline-block;
+                border: 1px solid gray;
+                border-radius: 5px;
+            }
+            #svg1{
+                margin-left: 5%;
+            }
+            .selected{
+                background-color: aqua;
+            }
+            .editIcon{
+                float: right;
+                font-size: 20px;
+                color:white;
+                margin-left: 0;
+
+            }
+            .disappear{
+               visibility:hidden;
+            }
+
+
+        </style>
+    </head>
+
+
+    <div id="region-radio-wrapper"></div>
+    <div id="product-radio-wrapper"></div>
+    <div id="svg1">
+        <svg width="720" height="400" xmlns="http://www.w3.org/2000/svg" id="svgColumn1" >
+        </svg>
+    </div>
+    <canvas id="canvas" width="720" height="400"></canvas>
+
+    </body>
+    <script src="ife31data.js"></script>
+    <script src="produceCheckbox.js"></script>
+    <script src="itemList.js"></script>
+    <script src="getItem.js"></script>
+    <script src="getData.js"></script>
+    <script src="formView.js"></script>
+    <script src="initialize.js"></script>
+    <script src="plotBlock.js"></script>
+    <script src="line.js"></script>
+    <script src="mover.js"></script>
+    <script src="app.js"></script>
+
+
+
+</html>
