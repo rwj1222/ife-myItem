@@ -22,6 +22,10 @@
                 border:1px solid black;
 
             }
+            td{
+                width:30px;
+
+            }
             #product-radio-wrapper,#region-radio-wrapper{
                 width:50%;
                 margin-top:10px;
@@ -33,21 +37,32 @@
                 border: 1px solid gray;
                 border-radius: 5px;
             }
-            #svg1{
-                margin-left: 5%;
+            .inputArea{
+                width:50%;
             }
+
             .selected{
                 background-color: aqua;
             }
+            .box{
+                position:relative;
+            }
             .editIcon{
-                float: right;
-                font-size: 20px;
-                color:white;
-                margin-left: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 1px;
+                color:gray;
+                visibility: hidden;
 
             }
+
+
             .disappear{
                visibility:hidden;
+            }
+            #container{
+                display: flex;
             }
 
 
@@ -57,23 +72,19 @@
 
     <div id="region-radio-wrapper"></div>
     <div id="product-radio-wrapper"></div>
+    <div id="container">
     <div id="svg1">
-        <svg width="720" height="400" xmlns="http://www.w3.org/2000/svg" id="svgColumn1" >
+        <svg width="700" height="400" xmlns="http://www.w3.org/2000/svg" id="svgColumn1" >
         </svg>
     </div>
-    <canvas id="canvas" width="720" height="400"></canvas>
+    <canvas id="canvas" width="630" height="400"></canvas></div>
 
     </body>
     <script src="ife31data.js"></script>
     <script src="produceCheckbox.js"></script>
-    <script src="itemList.js"></script>
-    <script src="getItem.js"></script>
-    <script src="getData.js"></script>
-    <script src="formView.js"></script>
-    <script src="initialize.js"></script>
+    <script src="table.js"></script>
     <script src="plotBlock.js"></script>
     <script src="line.js"></script>
-    <script src="mover.js"></script>
     <script src="app.js"></script>
 
 
